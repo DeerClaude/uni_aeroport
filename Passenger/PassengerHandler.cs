@@ -161,7 +161,7 @@ namespace Passenger
                             }
                             else //если пассажир прилетающий
                             {
-                                passenger.HoldingCargo = false;
+                                passenger.HoldingCargo = true;
                                 
                                 //TODO: сделать запрос визуализатору на перемещение к спауну
                                 string URL = String.Format("http://localhost:{0}/VisualizerService.svc/Move?type={1}&id={2}&zone={3}",
